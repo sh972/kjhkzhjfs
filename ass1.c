@@ -2,21 +2,21 @@
 
 int main()
 {
-	char a[50];
+	char b[50];
 	int i;
 	printf("enter the string\n");
-	scanf("%s",a);
-	for(i=0;a[i]!=0;i++)
+	scanf("%s",b);
+	for(i=0;b[i]!=0;i++)
 	{
-		if((a[i]>='A')&&(a[i]<='Z'))
-		a[i]+=32;
+		if((b[i]>='A')&&(b[i]<='Z'))
+		b[i]+=32;
 		else
-		a[i]-32;		
+		b[i]-32;		
 	}
 	printf("\n");
-	for(i=0;a[i]!=0;i++)
+	for(i=0;b[i]!=0;i++)
 	{
-		printf("%c",a[i]);
+		printf("%c",b[i]);
 	}
 	return 0;
 }
